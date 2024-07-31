@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GirlFriend's Day</title>
+    <style>
+        body {
+            font-family: 'Arial, sans-serif';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #2b8f4c, #7ec59b);
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #ff6f61;
+        }
+
+        p {
+            color: #333;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy GirlFriend Day, My Beautiful Woman in The World!</h1>
+        <p id="message">I'm so Proud of You.</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const messages = [
+                'You are amazing!',
+                'Thank you for doing your best everyday.',
+                'Keep smiling and enjoy your day!',
+                'You make every day special.',
+                'Hope your strength and all will be back.',
+                'Im here always to listen your rants and problem and will help you too',
+                'I love you!'
+            ];
+
+            const messageElement = document.getElementById('message');
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            messageElement.textContent = randomMessage;
+        });
+    </script>
+</body>
+</html>
